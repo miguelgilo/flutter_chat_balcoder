@@ -40,6 +40,30 @@
       });
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyArisd4Aj96iKZ29she9fSLQJo6ym1_-2k",
+    authDomain: "chat-balcoder-96c7f.firebaseapp.com",
+    projectId: "chat-balcoder-96c7f",
+    storageBucket: "chat-balcoder-96c7f.appspot.com",
+    messagingSenderId: "821370535771",
+    appId: "1:821370535771:web:2056c5204047fe57a4e47e",
+    measurementId: "G-SVV29RMNXV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

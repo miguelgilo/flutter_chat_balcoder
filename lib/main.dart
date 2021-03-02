@@ -1,8 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import 'ui/home_page.dart';
+import 'ui/home/home_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  FirebaseApp app = await Firebase.initializeApp();
+  assert(app != null);
+  print('Initialized default app $app');
+
   runApp(MyApp());
 }
 
